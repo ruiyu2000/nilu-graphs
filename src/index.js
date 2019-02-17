@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import 'normalize.css';
 
 import * as serviceWorker from './serviceWorker';
+import './axios';
 import './index.css';
 import App from './App';
 
