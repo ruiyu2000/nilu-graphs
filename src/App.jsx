@@ -1,8 +1,11 @@
+// @flow
+
 import React, { PureComponent } from 'react';
 import { Provider } from 'react-redux';
 
 import { store } from './reducers';
 import { appMounted } from './actions/app';
+import AppBar from './views/AppBar';
 
 export default class App extends PureComponent<{}> {
   componentDidMount() {
@@ -12,7 +15,7 @@ export default class App extends PureComponent<{}> {
   render() {
     return (
       <Provider store={store}>
-        <div className="App" />
+        <AppBar />
       </Provider>
     );
   }
