@@ -1,5 +1,9 @@
 // @flow
 
+export type ExtractReturnType = <T>((...Iterable<any>) => T) => T;
+
+export type ReturnType<Fn> = $Call<ExtractReturnType, Fn>;
+
 export type LatLng = {
   latitude: number,
   longitude: number
